@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Thomas Schneider - Ihre Apple Hilfe in Graz</title>
+    <link rel="shortcut icon" type="image/x-icon" href="fav.ico">
+    <meta name="description"
+        content="Als Apple Certified Support Professional helfe ich bei Problemen mit Mac, iPhone oder iPad. Sie erwartet eine kompetente, persönliche IT-Beratung rund um Apple, Datensicherheit und andere technische Probleme.">
+    <meta name="robots" content="noimageindex">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @font-face {
+            font-family: acier-bat-noir;
+            src: url(https://use.typekit.net/af/1aa843/00000000000000003b9ad7da/27/l?subset_id=2&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/1aa843/00000000000000003b9ad7da/27/d?subset_id=2&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/1aa843/00000000000000003b9ad7da/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <img src="img/logo.png">
+        <div id="bar"></div>
+    </div>
+    <div class="bg">
+        <div id="alert">
+            <div class="menu"></div>
+            <table>
+                <tr>
+                    <td><img src="img/mail.png" style="width: 70px;"></img></td>
+                    <td>
+                        <p><b>Möchten Sie Ihre Apple Hilfe kontaktieren?</b></p>
+                        <p>Wenn Sie dies nicht wünschen, klicken Sie auf "Neu starten", um die Seite neu zu laden.</p>
+                    </td>
+                </tr>
+            </table>
+            <a href="mailto:hilfe@macgraz.at?subject=Anfrage&body=Name%3A%0A%0ATelefonnummer%20(wenn%20R%C3%BCckruf%20erw%C3%BCnscht)%3A%0A%0ANachricht%3A%0A%0A"
+                class="button blue">OK</a>
+            <a class="button grey">Neu starten</a>
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="flex">
+            <div id="info">
+                <div class="menu"></div>
+                <div class="lights"></div>
+                <p>Als <b> Certified Support Professional</b> helfe ich Ihnen bei Problemen mit Ihrem Mac, iPhone, iPad
+                    und anderen technischen Geräten. Dank langjähriger Erfahrung erwartet Sie eine kompetente,
+                    persönliche IT-Beratung.</p>
+                <p>Ich nehme mir Zeit für Sie und erkläre Ihnen Schritt für Schritt Ihr technisches Gerät, führe Sie in
+                    Programme, macOS sowie iOS ein und berate individuell bei Fragestellungen rund um Apple,
+                    Datensicherheit, Kryptowährungen, Webgestaltung sowie andere technische Probleme.</p>
+            </div>
+            <div id="costs">
+                <div class="menu"></div>
+                <div class="lights"></div>
+                <p><b>30 Minuten = 30 Euro</b><br>+ 30 Euro bei Vor-Ort-Service (in Graz) unter 2 Stunden</p>
+                <p>5-Stunden-Block = 250 Euro<br>10-Stunden-Block = 450 Euro</p>
+                <p>Umsatzsteuerbefreit – Kleinunternehmer gem. § 6 Abs. 1 Z 27 UStG</p>
+            </div>
+            <div id="contact">
+                <div class="menu"></div>
+                <div class="lights"></div>
+                <div class="portrait">
+                    <div class="img-portrait"></div>
+                    <div class="lights-portrait"></div>
+                </div>
+                <h2>Thomas Schneider, BA</h2>
+                <p>Hasnerplatz 3a<br>8010 Graz<br><a
+                        href="mailto:hilfe@macgraz.at?subject=Anfrage&body=Name%3A%0A%0ATelefonnummer%20(wenn%20R%C3%BCckruf%20erw%C3%BCnscht)%3A%0A%0ANachricht%3A%0A%0A">hilfe@macgraz.at</a>
+                </p>
+                <p class="black"><a id="impressum-li">Impressum</a><br><a
+                        id="haftungsausschluss-li">Haftunsausschluss</a><br><a id="datenschutz-li">Datenschutz</a></p>
+            </div>
+            <div id="footer">
+                <div class="menu"></div>
+                <div class="lights"></div>
+                <p>Zum Schutz Ihrer Privatsphäre speichert diese Seite <u>keine</u> personenbezogenen Daten wie Cookies.
+                </p>
+                <p>Copyright 2019 Thomas Schneider. Alle Rechte vorbehalten.</p>
+            </div>
+            <div class="spacer"></div>
+        </div>
+        <div class="lightbox">
+            <div class="lightbox window">
+                <div class="lightbox lights-light"></div>
+                <div id="impressum">
+                    <h1>Offenlegungspflicht gemäß § 25 Mediengesetz</h1>
+                    <table>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Inhaber: </td>
+                            <td>Thomas Schneider, BA</td>
+                        </tr>
+                        <tr>
+                            <td>Sitz: </td>
+                            <td>Hasnerplatz 3a, 8010 Graz, Austria</td>
+                        </tr>
+                        <tr>
+                            <td>E-Mail: </td>
+                            <td><a href="mailto:hilfe@macgraz.at">hilfe@macgraz.at</a></td>
+                        </tr>
+                        <tr>
+                            <td>Web: </td>
+                            <td><a href="https://www.macgraz.at">www.macgraz.at</a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Rechtsform: </td>
+                            <td>Einzelunternehmer</td>
+                        </tr>
+                        <tr>
+                            <td>Kammer: </td>
+                            <td>Wirtschaftskammer Steiermark</td>
+                        </tr>
+                        <tr>
+                            <td>Aufsichtsbehörde: </td>
+                            <td>Magistrat der Stadt Graz</td>
+                        </tr>
+                        <tr>
+                            <td>Gewerbeordnung: </td>
+                            <td><a href="https://www.ris.bka.gv.at" target="_blank">www.ris.bka.gv.at</a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Berufsbezeichnung: </td>
+                            <td>Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO:</td>
+                        </tr>
+                        <tr>
+                            <td>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit,
+                                die Sie unter <a href="https://ec.europa.eu/consumers/odr"
+                                    target="_blank">https://ec.europa.eu/consumers/odr</a> finden. Sie können allfällige
+                                Beschwerde auch an die oben angegebene E-Mail-Adresse richten.</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="haftungsausschluss">
+                    <h1>Haftungsausschluss</h1>
+                    <h3>Fassung vom 01. März 2018</h3>
+                    <p>Dieser Haftungsausschluss ist als Teil des Internetangebots zu betrachten, von dem aus auf diese
+                        Webseite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden
+                        Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen
+                        Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.</p>
+                    <h3>Haftung für Inhalte dieser Webseite</h3>
+                    <p>Die Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit,
+                        Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr. Als
+                        Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+                        verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+                        Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
+                        Tätigkeit hinweisen.</p>
+                    <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
+                        Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt
+                        der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
+                        Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+                    <h3>Haftung für Links auf Webseiten Dritter</h3>
+                    <p>Unser Angebot enthält Links zu externen Websites. Auf den Inhalt dieser externen Webseiten haben
+                        wir keinerlei Einfluss. Deshalb können wir für diese fremden Inhalte auch keine Gewähr
+                        übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder
+                        Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung
+                        auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung
+                        nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
+                        konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
+                        Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+                    <h3>Urheberrecht</h3>
+                    <p>Die Betreiber dieser Webseite sind bemüht, stets die Urheberrechte anderer zu beachten bzw. auf
+                        selbst erstellte sowie lizenzfreie Werke zurückzugreifen. Die durch die Seitenbetreiber
+                        erstellten Inhalte und Werke auf dieser Webseite unterliegen dem Urheberrecht. Beiträge Dritter
+                        sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+                        Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des
+                        jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten,
+                        nicht kommerziellen Gebrauch gestattet.</p>
+                    <p><br>Fotos: iStock/grinvalds, unsplash/starsy, unsplash/schmidy, unsplash/meric,
+                        unsplash/keithhardy2001, unsplash/willy_teee, unsplash/s___d___g, unsplash/digitalreveries,
+                        pexels/rawpixel.com, pixabay/WikiImages, unsplash/eberhardgross, unsplash/joshhild</p>
+                    <p>Quelle: <a href="https://www.firmenwebseiten.at/"
+                            target="_blank">https://www.firmenwebseiten.at</a><br><br><br></p>
+                </div>
+                <div id="datenschutz">
+                    <h1>Datenschutzerklärung</h1>
+                    <h3>Fassung vom 01. März 2018</h3>
+                    <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir versuchen
+                        so wenig Daten wie möglich zu erheben und behandeln Ihre personenbezogenen Daten stets
+                        vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser
+                        Datenschutzerklärung.</p>
+                    <h3>Datenschutz</h3>
+                    <p>Auf unseren Webseite werden keine personenbezogenen Daten erhoben. Die Angabe von
+                        personenbezogenen Daten (beispielsweise Name, Telefonnummer, E-Mail-Adresse oder Anschrift) bei
+                        der Kommunikation per E-Mail erfolgt auf freiwilliger Basis. Diese Daten werden ohne Ihre
+                        ausdrückliche Zustimmung nicht an Dritte weitergegeben.</p>
+                    <p>Wir weisen jedoch darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation
+                        per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff
+                        durch Dritte ist daher nicht möglich.</p>
+                    <h3>Cookies</h3>
+                    <p>Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner
+                        keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, das Angebot
+                        nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf
+                        Ihrem Rechner abgelegt werden und die Ihr Browser speichert.</p>
+                    <p>Zum Schutz Ihrer Privatsphäre verwendet diese Seite nur so genannte „Session-Cookies“. Sie werden
+                        nach Ende Ihres Besuchs automatisch gelöscht und bleiben nicht auf Ihrem Endgerät gespeichert.
+                    </p>
+                    <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden
+                        und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder
+                        generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser
+                        aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website
+                        eingeschränkt sein.</p>
+                    <h3>SSL-Verschlüsselung</h3>
+                    <p>Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher
+                        Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine
+                        SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des
+                        Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+                    </p>
+                    <p>Wenn die SSL Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht
+                        von Dritten mitgelesen werden.</p>
+                    <h3>Verarbeiten von Daten (Kunden- und Vertragsdaten)</h3>
+                    <p>Wir erheben, verarbeiten und nutzen personenbezogene Daten nur, soweit sie für die Begründung,
+                        inhaltliche Ausgestaltung oder Änderung des Rechtsverhältnisses erforderlich sind
+                        (Bestandsdaten). Personenbezogene Daten über die Inanspruchnahme unserer Internetseiten
+                        (Nutzungsdaten) erheben, verarbeiten und nutzen wir nur, soweit dies erforderlich ist, um dem
+                        Nutzer die Inanspruchnahme des Dienstes zu ermöglichen oder abzurechnen.</p>
+                    <h3>Recht auf Auskunft, Löschung, Sperrung</h3>
+                    <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
+                        personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie
+                        ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen
+                        zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen
+                        Adresse an uns wenden.</p>
+                    <h3>Widerspruch Werbe-Mails</h3>
+                    <p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von
+                        nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen.
+                        Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der
+                        unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.</p>
+                    <p><br>Quelle: <a href="https://www.e-recht24.de"
+                            target="_blank">https://www.e-recht24.de</a><br><br><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-overlay no-js">
+        <section>
+            <div class="card card-front"></div>
+            <div class="card card-back"></div>
+            <div class="card card-left"></div>
+            <div class="card card-top"></div>
+            <div class="card card-right"></div>
+            <div class="card card-bottom"></div>
+        </section>
+    </div>
+    <div id="no-js">
+        <div class="bg">
+            <div id="alert" class="zoom-in">
+                <div class="menu"></div>
+                <table>
+                    <tr>
+                        <td><img src="img/no-js.png" style="width: 70px;"></img></td>
+                        <td>
+                            <p><b>Fehler: Javascript deaktiviert</b></p>
+                            <p>Ihr Browser unterstützt Javascript nicht oder es ist deaktiviert. Bitte kontaktieren Sie
+                                Ihre Apple Hilfe unter: <a
+                                    href="mailto:hilfe@macgraz.at?subject=Javascript deaktiviert&body=Name%3A%0A%0ATelefonnummer%20(wenn%20R%C3%BCckruf%20erw%C3%BCnscht)%3A%0A%0ANachricht%3A%0A%0A">hilfe@macgraz.at</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <a href="mailto:hilfe@macgraz.at?subject=Javascript deaktiviert&body=Name%3A%0A%0ATelefonnummer%20(wenn%20R%C3%BCckruf%20erw%C3%BCnscht)%3A%0A%0ANachricht%3A%0A%0A"
+                    class="button blue">OK</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="all.min.js"></script>
+</body>
+
+</html>

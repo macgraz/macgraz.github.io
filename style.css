@@ -513,7 +513,7 @@ div.flex {
     display: flex;
     flex-flow: row wrap;
     width: 85%;
-    height: 85%;
+    height: 85vh;
     margin: auto;
     padding-top: 4em;
     align-items: center;

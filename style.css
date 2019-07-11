@@ -380,9 +380,6 @@ html, body {
 
 body {
     position: absolute; 
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: auto;
-    overflow-y: auto;
 }
 
 html, body, h1, h2, h3, p, table {

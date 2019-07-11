@@ -17,6 +17,14 @@ function is_touch_device() {
     return mq(query);
 }
 
+//ios address bar hide
+function quickHideAddressBar() {
+	setTimeout(function() {
+		if(window.pageYOffset !== 0) return;
+		window.scrollTo(0, window.pageYOffset + 1);
+	}, 1000);
+}
+
 //portrait visibility, card visibility
 if (is_touch_device()) {
     document.querySelector(".portrait").classList.add("hidden-touch")

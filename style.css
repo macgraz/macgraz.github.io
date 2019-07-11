@@ -335,7 +335,9 @@
     #alert img {
         width: 60px!important;
     }
-
+    .flex p, .lightbox p {
+        font-size: 15px!important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -361,6 +363,9 @@
     }
     #impressum, #haftungsausschluss, #datenschutz {
         padding: 2em 1em 0em 1em!important;
+    }
+    .flex p, .lightbox p {
+        font-size: 13px!important;
     }
 }
 

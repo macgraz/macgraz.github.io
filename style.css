@@ -373,8 +373,6 @@ and (max-width: 767px) {
 html, body { 
     background-color: hsl(13, 81%, 53%); 
     height: 100vh;
-    overflow-y: scroll;
-    overscroll-behavior-y: none;
 }
 
 html, body, h1, h2, h3, p, table {

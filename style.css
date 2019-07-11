@@ -395,8 +395,12 @@ and (max-width: 767px) {
 
 html, body { 
     background-color: hsl(13, 81%, 53%); 
+}
+
+body {
     height: 100vh;
     margin: auto;
+    padding: auto;
 }
 
 html, body, h1, h2, h3, p, table {
@@ -1167,3 +1171,10 @@ div.card-back {
     -o-transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(2px);
     transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(2px);
 }
+
+/*@font-face {
+    font-family: acier-bat-noir;
+    src: url(https://use.typekit.net/af/1aa843/00000000000000003b9ad7da/27/l?subset_id=2&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/1aa843/00000000000000003b9ad7da/27/d?subset_id=2&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/1aa843/00000000000000003b9ad7da/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}*/

@@ -92,25 +92,25 @@ document.addEventListener("mousemove", function (event) {
 //WINDOWS
 
 //windows activity
-$(".flex").children().click(function () {
+$(".flex").children().on("click touchstart", function () {
     $(".flex").children().removeClass("active");
     $(this).addClass("active");
-}).children(".black").click(function (e) {
+}).children(".black").on("click touchstart", function (e) {
     e.stopPropagation();
 });
 
-$(".lightbox").click(function () {
+$(".lightbox").on("click touchstart", function () {
     $(".flex").children().removeClass("active");
     $(".flex").children().children("div.lights, div.menu").removeClass("active");
 });
 
-$(".overlay").click(function () {
+$(".overlay").on("click touchstart", function () {
     $(".flex").children().removeClass("active");
     $(".flex").children().children("div.lights, div.menu").removeClass("active");
     $(".lightbox").removeClass("visible");
     $(".lightbox").children().removeClass("visible");
     $(".portrait").removeClass("hidden");
-}).children().children().click(function (e) {
+}).children().children().on("click touchstart", function (e) {
     e.stopPropagation();
 });
 
@@ -120,14 +120,14 @@ $("div.lights").hover(function () {
     $(this).removeClass("hover");
 });
 
-$(".flex").children().click(function () {
+$(".flex").children().on("click touchstart", function () {
     $(".flex").children().children("div.lights, div.menu").removeClass("active");
     $(this).children("div.lights, div.menu").addClass("active");
 });
 
 //lightbox activity
 
-$("p.black a").click(function () {
+$("p.black a").on("click touchstart", function () {
     $(".lightbox").addClass("visible");
     $(".flex").children().removeClass("active");
     $(".flex").children().children("div.lights, div.menu").removeClass("active")
@@ -135,22 +135,22 @@ $("p.black a").click(function () {
     $(".lightbox.window, .lights-light").addClass("visible");
 });
 
-$("#impressum-li").click(function () {
+$("#impressum-li").on("click touchstart", function () {
     $("#impressum").addClass("visible");
     $("#haftungsausschluss, #datenschutz").removeClass("visible");
 });
 
-$("#haftungsausschluss-li").click(function () {
+$("#haftungsausschluss-li").on("click touchstart", function () {
     $("#haftungsausschluss").addClass("visible");
     $("#impressum, #datenschutz").removeClass("visible");
 });
 
-$("#datenschutz-li").click(function () {
+$("#datenschutz-li").on("click touchstart", function () {
     $("#datenschutz").addClass("visible");
     $("#haftungsausschluss, #impressum").removeClass("visible");
 });
 
-$(".lights-light, #contact div.lights, #info, #costs, #footer").click(function () {
+$(".lights-light, #contact div.lights, #info, #costs, #footer").on("click touchstart", function () {
     $(".lightbox").removeClass("visible");
     $(".lightbox").children().removeClass("visible");
     $(".portrait").removeClass("hidden");
@@ -161,7 +161,7 @@ $(".lights-light, #contact div.lights, #info, #costs, #footer").click(function (
 
 //after 4 clicks open warning
 var count = 1;
-$(".lights").click(function () {
+$(".lights").on("click touchstart", function () {
     $(this).parent().css("transition-duration", "0s");
     $(this).parent().removeClass("visible");
     count += 1;
@@ -175,7 +175,7 @@ $(".lights").click(function () {
 
 
 //warning buttons
-$("#alert .button.blue").click(function () {
+$("#alert .button.blue").on("click touchstart", function () {
     setTimeout(function () {
         $("#alert").removeClass("visible");
     }, 100);
@@ -190,7 +190,7 @@ $("#alert .button.blue").click(function () {
     })
 });
 
-$("#alert .button.grey").click(function () {
+$("#alert .button.grey").on("click touchstart", function () {
     setTimeout(function () {
         $("#alert").removeClass("visible");
     }, 100);

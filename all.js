@@ -44,12 +44,10 @@ $('div.bg').css({
 });
 
 //fix jump bg ios
-function quickHideAddressBar() {
-	setTimeout(function() {
-		if(window.pageYOffset !== 0) return;
-		window.scrollTo(0, window.pageYOffset + 1);
-    }, 1000);
-}
+setTimeout(function() {
+	if(window.pageYOffset !== 0) return;
+	window.scrollTo(0, window.pageYOffset + 1);
+}, 1000)
 
 // after 5 seconds
 setTimeout(function () {

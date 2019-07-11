@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Work Sans'), local('WorkSans-Regular'), url(fonts/worksans-regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Work Sans Bold'), local('WorkSans-Bold'), url(fonts/worksans-bold.woff2) format('woff2');
+}
+
 @-webkit-keyframes loading {
     0% {
         width: 0%;

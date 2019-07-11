@@ -43,12 +43,6 @@ $('div.bg').css({
     'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
 });
 
-//fix jump bg ios
-setTimeout(function() {
-	if(window.pageYOffset !== 0) return;
-	window.scrollTo(0, window.pageYOffset + 1);
-}, 1000)
-
 // after 5 seconds
 setTimeout(function () {
     document.querySelector("div.loader").classList.add("hidden")

@@ -36,7 +36,7 @@ if (is_touch_device()) {
     setTimeout(function(){
         window.scrollTo(0, 1);
     }, 0);
-});+/
+});*/
 
 //LOADER
 

@@ -395,12 +395,9 @@ and (max-width: 767px) {
 
 html, body { 
     background-color: hsl(13, 81%, 53%); 
-}
-
-html {
     height: 100vh;
+    width: 100%;
     margin: auto;
-    padding: auto;
 }
 
 body {

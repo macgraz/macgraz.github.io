@@ -382,7 +382,7 @@ body {
     position: absolute; 
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: auto;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 html, body, p, table {

@@ -385,7 +385,7 @@ body {
     overflow-y: auto;
 }
 
-html, body, p, table {
+html, body, h1, h2, h3, p, table {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;

@@ -43,13 +43,12 @@ $('div.bg').css({
     'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
 });
 
-// bg ios jump fix
-var bg = $(".div.bg");
-function resizeBackground() {
-    bg.height( $(window).height() + 60);
-}
-$(window).resize(resizeBackground);
-resizeBackground();
+//fix jump bg ios
+function quickHideAddressBar() {
+	setTimeout(function() {
+		if(window.pageYOffset !== 0) return;
+		window.scrollTo(0, window.pageYOffset + 1);
+	}, 1000);
 
 // after 5 seconds
 setTimeout(function () {

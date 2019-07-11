@@ -379,7 +379,7 @@ html, body {
     padding: 0;
 }
 
-body {
+html {
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: auto;
     overflow: auto;

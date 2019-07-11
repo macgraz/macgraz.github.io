@@ -321,10 +321,9 @@
     z-index: 999999999;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     h2, h3, p, .button, table, #alert p b {
-        font-size: 15px!important;
-        
+        font-size: 15px!important;  
     }
     h1 {
         font-size: 16px!important;
@@ -336,12 +335,12 @@
     #alert img {
         width: 60px!important;
     }
-    .flex p, .lightbox p {
+    #info p, div.flex p, .lightbox p {
         font-size: 15px!important;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     h2, h3, p, .button, table, #alert p b {
         font-size: 13px!important;
     }
@@ -365,7 +364,7 @@
     #impressum, #haftungsausschluss, #datenschutz {
         padding: 2em 1em 0em 1em!important;
     }
-    .flex p, .lightbox p {
+    #info p, div.flex p, .lightbox p {
         font-size: 13px!important;
     }
 }

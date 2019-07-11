@@ -482,7 +482,7 @@ div.overlay {
 
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: auto;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 div.overlay.hidden {
@@ -887,7 +887,7 @@ p.black-only a:hover:before {
 
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: auto;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .lightbox.window.visible, .lights-light.visible, #impressum.visible, #haftungsausschluss.visible, #datenschutz.visible {

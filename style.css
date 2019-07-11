@@ -385,6 +385,12 @@ and (max-width: 767px) {
     div.flex p, .lightbox p {
         font-size: 13px!important;
     }
+    #alert td {
+        padding: 0!important;
+    }
+    #alert img {
+        padding-right: 8px;
+    }
 }
 
 html, body { 

@@ -128,10 +128,11 @@ $(".flex").children().click(function () {
 //lightbox activity
 
 $("p.black a").click(function () {
-    $(".lightbox, .lightbox.window, .lightbox.lights-light").addClass("visible");
+    $(".lightbox").addClass("visible");
     $(".flex").children().removeClass("active");
     $(".flex").children().children("div.lights, div.menu").removeClass("active")
     $(".portrait").addClass("hidden");
+    $(".lightbox.window, .lights-light").addClass("visible");
 });
 
 $("#impressum-li").click(function () {
@@ -149,7 +150,7 @@ $("#datenschutz-li").click(function () {
     $("#haftungsausschluss, #impressum").removeClass("visible");
 });
 
-$(".lightbox.lights-light, #contact div.lights, #info, #costs, #footer").click(function () {
+$(".lights-light, #contact div.lights, #info, #costs, #footer").click(function () {
     $(".lightbox").removeClass("visible");
     $(".lightbox").children().removeClass("visible");
     $(".portrait").removeClass("hidden");

@@ -827,9 +827,10 @@ p.black-only a:hover:before {
     pointer-events: none;
 
     display: none;
-    
+
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .lightbox.visible {
@@ -856,7 +857,7 @@ p.black-only a:hover:before {
     box-shadow: 0px 13px 20px 0px rgba(10,10,10,0.3);
 }
 
-.lightbox.lights-light {
+.lights-light {
     opacity: 0;
     pointer-events: none;
 
@@ -870,7 +871,7 @@ p.black-only a:hover:before {
     width: 32px;
 }
 
-.lightbox.lights-light:active {
+.lights-light:active {
     background-image: url(img/lights-lightbox-click.png);
 }
 
@@ -891,7 +892,7 @@ p.black-only a:hover:before {
     overflow: auto;
 }
 
-.lightbox.window.visible, .lightbox.lights-light.visible, #impressum.visible, #haftungsausschluss.visible, #datenschutz.visible {
+.lightbox.window.visible, .lights-light.visible, #impressum.visible, #haftungsausschluss.visible, #datenschutz.visible {
     opacity: 1;
     pointer-events: auto;
     -webkit-transition: opacity 300ms ease-in-out 100ms;

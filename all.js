@@ -37,6 +37,15 @@ if (is_touch_device()) {
 $(".card-overlay").removeClass("no-js")
 $("#no-js").addClass("hidden")
 
+// ios re-orientation fix
+if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+    window.addEventListener("load",function() {
+        setTimeout(function() {
+            window.scrollTo(0, 1);
+        }, 1000);
+    });
+}
+
 // bg change
 var images = ['bg-01.jpeg', 'bg-02.jpg', 'bg-03.jpg', 'bg-04.jpg', 'bg-05.jpg', 'bg-06.jpg', 'bg-07.jpg', 'bg-08.jpg', 'bg-09.jpg', 'bg-10.jpg', 'bg-11.jpg', 'bg-12.jpg'];
 $('div.bg').css({

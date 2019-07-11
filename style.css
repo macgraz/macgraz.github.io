@@ -371,7 +371,7 @@ and (max-width: 767px) {
 }
 
 html, body {
-    position: fixed;  
+    position: absolute;  
     background-color: hsl(13, 81%, 53%); 
     height: 100vh;
     width: 100vh;

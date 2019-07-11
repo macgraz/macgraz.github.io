@@ -395,7 +395,7 @@ and (max-width: 767px) {
 
 html, body { 
     background-color: hsl(13, 81%, 53%); 
-    height: 100vh;
+    height: 100%;
     margin: auto;
 }
 
@@ -469,7 +469,7 @@ div.bg {
     top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
 
     opacity: 1;
     -webkit-transition: opacity 300ms;

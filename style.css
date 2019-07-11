@@ -324,6 +324,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     h2, h3, p, .button, table, #alert p b {
         font-size: 15px!important;
+        
     }
     h1 {
         font-size: 16px!important;

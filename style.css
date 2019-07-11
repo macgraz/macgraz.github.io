@@ -335,7 +335,7 @@
     #alert img {
         width: 60px!important;
     }
-    #info p, div.flex p, .lightbox p {
+    .flex p, .lightbox p {
         font-size: 15px!important;
     }
 }
@@ -364,7 +364,7 @@
     #impressum, #haftungsausschluss, #datenschutz {
         padding: 2em 1em 0em 1em!important;
     }
-    #info p, div.flex p, .lightbox p {
+    .flex p, .lightbox p {
         font-size: 13px!important;
     }
 }
@@ -817,6 +817,9 @@ p.black-only a:hover:before {
 
 .lightbox {
     position: fixed;
+
+    visibility: hidden;
+
     margin: auto;
     top: 0px;
     left: 0px;
@@ -828,6 +831,10 @@ p.black-only a:hover:before {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.lightbox.visible {
+    visibility: visible;
 }
 
 .lightbox.window {

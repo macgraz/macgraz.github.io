@@ -377,7 +377,9 @@ html, body {
     width: 100vh;
     margin: 0;
     padding: 0;
+}
 
+body {
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: auto;
     overflow: auto;
@@ -888,6 +890,10 @@ p.black-only a:hover:before {
     right: 4px;
     background-color: #fff;
     padding: 2.2em 2em 0em 2em;
+
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: auto;
+    overflow: auto;
 }
 
 .lightbox.window.visible, .lights-light.visible, #impressum.visible, #haftungsausschluss.visible, #datenschutz.visible {

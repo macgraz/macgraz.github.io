@@ -48,7 +48,8 @@ function quickHideAddressBar() {
 	setTimeout(function() {
 		if(window.pageYOffset !== 0) return;
 		window.scrollTo(0, window.pageYOffset + 1);
-	}, 1000);
+    }, 1000);
+}
 
 // after 5 seconds
 setTimeout(function () {

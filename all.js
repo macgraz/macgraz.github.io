@@ -35,7 +35,7 @@ if (is_touch_device()) {
 window.addEventListener("load",function() {
     setTimeout(function(){
         window.scrollTo(0, 1);
-    }, 0);
+    }, 1000);
 });
 
 //LOADER

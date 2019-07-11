@@ -43,6 +43,16 @@ $('div.bg').css({
     'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
 });
 
+// bg full screen ios
+var bg = $(".div.bg");
+
+function resizeBackground() {
+    bg.height( $(window).height() + 60);
+}
+
+$(window).resize(resizeBackground);
+resizeBackground();
+
 // after 5 seconds
 setTimeout(function () {
     document.querySelector("div.loader").classList.add("hidden")

@@ -34,8 +34,8 @@ if (is_touch_device()) {
 //hide adress bar iOS
 window.addEventListener("load",function() {
     setTimeout(function(){
-        body.scrollTo(0, 1);
-    }, 0);
+        window.scrollTo(0, 1);
+    }, 4000);
 });
 
 //LOADER

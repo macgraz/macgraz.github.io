@@ -322,32 +322,32 @@
 }
 
 @media screen and (max-width: 1024px) {
-    h2, h3, p, .button, table, #alert p b {
+    h2, h3, div.p, .button, table, #alert p b {
         font-size: 15px!important;  
     }
     h1 {
         font-size: 16px!important;
     }
-    #alert p {
+    #alert div.p {
         font-size: 14px!important;
         padding-left: 10px!important;
     }
     #alert img {
         width: 60px!important;
     }
-    .flex p, .lightbox p {
+    div.flex div.p, .lightbox div.p {
         font-size: 15px!important;
     }
 }
 
 @media screen and (max-width: 767px) {
-    h2, h3, p, .button, table, #alert p b {
+    h2, h3, div.p, .button, table, #alert p b {
         font-size: 13px!important;
     }
     h1 {
         font-size: 14px!important;
     }
-    #alert p {
+    #alert div.p {
         font-size: 12px!important;
         padding-left: 8px!important;
     }
@@ -364,7 +364,7 @@
     #impressum, #haftungsausschluss, #datenschutz {
         padding: 2em 1em 0em 1em!important;
     }
-    .flex p, .lightbox p {
+    div.flex div.p, .lightbox div.p {
         font-size: 13px!important;
     }
 }

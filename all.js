@@ -107,6 +107,7 @@ $(".lightbox").click(function () {
 $(".overlay").click(function () {
     $(".flex").children().removeClass("active");
     $(".flex").children().children("div.lights, div.menu").removeClass("active");
+    $(".lightbox").removeClass("visible");
     $(".lightbox").children().removeClass("visible");
     $(".portrait").removeClass("hidden");
 }).children().children().click(function (e) {
@@ -127,7 +128,7 @@ $(".flex").children().click(function () {
 //lightbox activity
 
 $("p.black a").click(function () {
-    $(".lightbox.window, .lightbox.lights-light").addClass("visible");
+    $(".lightbox, .lightbox.window, .lightbox.lights-light").addClass("visible");
     $(".flex").children().removeClass("active");
     $(".flex").children().children("div.lights, div.menu").removeClass("active")
     $(".portrait").addClass("hidden");
@@ -149,6 +150,7 @@ $("#datenschutz-li").click(function () {
 });
 
 $(".lightbox.lights-light, #contact div.lights, #info, #costs, #footer").click(function () {
+    $(".lightbox").removeClass("visible");
     $(".lightbox").children().removeClass("visible");
     $(".portrait").removeClass("hidden");
 });

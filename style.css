@@ -722,6 +722,7 @@ h3 {
 
 p {
     padding: .5em;
+    position: relative;
 }
 
 td {

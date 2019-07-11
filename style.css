@@ -378,8 +378,7 @@ html, body {
     margin: 0;
     padding: 0;
 
-    -ms-overflow-style: hidden;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 html, body, p, table {

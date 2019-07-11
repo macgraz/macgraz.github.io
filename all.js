@@ -43,13 +43,11 @@ $('div.bg').css({
     'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
 });
 
-// bg full screen ios
+// bg ios jump fix
 var bg = $(".div.bg");
-
 function resizeBackground() {
     bg.height( $(window).height() + 60);
 }
-
 $(window).resize(resizeBackground);
 resizeBackground();
 

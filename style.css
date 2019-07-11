@@ -400,10 +400,6 @@ html, body {
     margin: auto;
 }
 
-body {
-    height: 100%;
-}
-
 html, body, h1, h2, h3, p, table {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;

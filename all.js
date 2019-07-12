@@ -25,6 +25,9 @@ if (is_touch_device()) {
     $("body").mouseover(function () {
         $("section").addClass("visible");
     });
+    $("body").mouseleave(function () {
+        $("section").removeClass("visible");
+    });
 }
 
 //LOADER

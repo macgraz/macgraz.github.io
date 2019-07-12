@@ -497,7 +497,7 @@ div.bg.hidden {
     cursor: none;
 }
 
-div.overlay {
+div.main {
     position: absolute;
     top: 0;
     left: 0;
@@ -505,7 +505,7 @@ div.overlay {
     height: 100%;
 }
 
-div.overlay.hidden {
+div.main.hidden {
     display: none;
 }
 
@@ -1051,7 +1051,7 @@ p.black-only a:hover:before {
     transition: all 0.4s ease-in-out 100ms;
 }
 
-.card-overlay {
+.overlay {
     position: fixed;
     
     -webkit-perspective: 1500px;

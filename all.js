@@ -30,7 +30,7 @@ if (is_touch_device()) {
 //LOADER
 
 //no-js remove
-$(".card-overlay").removeClass("no-js")
+$(".overlay").removeClass("no-js")
 $("#no-js").addClass("hidden")
 
 // bg change
@@ -99,7 +99,7 @@ $(".lightbox").on("click touch", function () {
     $(".flex").children().children("div.lights, div.menu").removeClass("active");
 });
 
-$(".overlay").on("click touch", function () {
+$(".main").on("click touch", function () {
     $(".flex").children().removeClass("active");
     $(".flex").children().children("div.lights, div.menu").removeClass("active");
     $(".lightbox").removeClass("visible");
@@ -161,7 +161,7 @@ $(".lights").on("click touch", function () {
     $(this).parent().removeClass("visible");
     count += 1;
     if (count == 5) {
-        $(".overlay").addClass("hidden");
+        $(".main").addClass("hidden");
         setTimeout(function () {
             $("#alert").addClass("visible");
         }, 500);

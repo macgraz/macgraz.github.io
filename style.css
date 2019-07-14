@@ -489,7 +489,7 @@ div.bg {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
 
     opacity: 1;
@@ -511,7 +511,7 @@ div.bg {
     align-items: center;
     flex-direction: column;
 
-    transition: height 1000s steps(1);
+    transition: min-height 1000s steps(1);
 }
 
 div.bg.hidden {

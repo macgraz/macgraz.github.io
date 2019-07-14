@@ -21,16 +21,7 @@ function is_touch_device() {
 if (is_touch_device()) {
     document.querySelector(".portrait").classList.add("hidden-touch")
     ;
-    $(window).scroll(function() {    
-        var scroll = $(window).scroll();
-        if (scroll >= 70) {
-        $(".div.bg").addClass("fixed");
-        } else {
-        $(".div.bg").removeClass("fixed");
-        }
-    });
 } else {
-    $("div.bg"). addClass("fixed");
     $("body").mouseover(function () {
         $("section").addClass("visible");
     });

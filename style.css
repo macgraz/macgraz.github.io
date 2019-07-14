@@ -742,7 +742,7 @@ div.lights.hover {
 }
 
 h1, h2, h3, p, .button, table {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'Arial', sans-serif;
     font-size: 16px;
     letter-spacing: .01em;
     color: rgba(10, 10, 10, 1);

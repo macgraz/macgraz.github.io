@@ -194,7 +194,7 @@ $("#alert .button.grey").on("click touch", function () {
         $("#alert").removeClass("visible");
     }, 100);
     setTimeout(function () {
-        $("div.bg").removeClass("hidden");
+        $("div.bg").addClass("hidden");
     }, 2000);
     setTimeout(function () {
         $("section").removeClass("visible");

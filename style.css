@@ -447,8 +447,6 @@ div.loader {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    overflow: hidden;
 }
 
 div.loader:hover {
@@ -486,7 +484,6 @@ div.loader img {
 div.loader.hidden {
     opacity: 0;
     pointer-events: none;
-    overflow: auto;
 }
 
 div.bg {

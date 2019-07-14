@@ -489,7 +489,7 @@ div.bg {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     margin: auto;
 
     opacity: 1;
@@ -515,6 +515,10 @@ div.bg {
 div.bg.hidden {
     opacity: 0;
     cursor: none;
+}
+
+.u-prevent-jump {
+    transition: min-height 1000s steps(1);
 }
 
 div.main {

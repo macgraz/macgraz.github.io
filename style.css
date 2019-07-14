@@ -419,11 +419,6 @@ body {
     margin: auto;
     top: 0;
     left: 0;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 html, body, h1, h2, h3, p, table {
@@ -496,7 +491,8 @@ div.bg {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    margin: auto;
 
     opacity: 1;
     -webkit-transition: opacity 300ms;
@@ -505,17 +501,24 @@ div.bg {
     -o-transition: opacity 300ms;
     transition: opacity 300ms;
 
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
 }
 
 div.bg.hidden {

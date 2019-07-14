@@ -185,7 +185,7 @@ $("#alert .button.blue").on("click touch", function () {
         }, 1700);
         setTimeout(function () {
             location.reload();
-        }, 2700);
+        }, 2400);
     })
 });
 
@@ -201,5 +201,5 @@ $("#alert .button.grey").on("click touch", function () {
     }, 2700);
     setTimeout(function () {
         location.reload();
-    }, 3700);
+    }, 3400);
 });

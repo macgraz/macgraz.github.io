@@ -178,14 +178,14 @@ $("#alert .button.blue").on("click touch", function () {
     }, 100);
     $("body").on("mouseleave touchstart", function () {
         setTimeout(function () {
-            $("section").removeClass("visible");
-        }, 900);
-        setTimeout(function () {
             $("div.bg").addClass("hidden");
-        }, 1400);
+        }, 1000);
+        setTimeout(function () {
+            $("section").removeClass("visible");
+        }, 1800);
         setTimeout(function () {
             location.reload();
-        }, 2400);
+        }, 2800);
     })
 });
 
@@ -194,12 +194,12 @@ $("#alert .button.grey").on("click touch", function () {
         $("#alert").removeClass("visible");
     }, 100);
     setTimeout(function () {
-        $("section").removeClass("visible");
-    }, 1900);
+        $("div.bg").removeClass("hidden");
+    }, 2000);
     setTimeout(function () {
-        $("div.bg").addClass("hidden");
-    }, 2400);
+        $("section").removeClass("visible");
+    }, 2800);
     setTimeout(function () {
         location.reload();
-    }, 3400);
+    }, 3800);
 });

@@ -511,6 +511,10 @@ div.bg {
     align-items: center;
     flex-direction: column;
 
+    -webkit-transition: min-height 1000s steps(1);
+    -moz-transition: min-height 1000s steps(1);
+    -ms-transition: min-height 1000s steps(1);
+    -o-transition: min-height 1000s steps(1);
     transition: min-height 1000s steps(1);
 }
 

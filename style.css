@@ -487,7 +487,7 @@ div.loader.hidden {
 }
 
 div.bg {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
@@ -507,18 +507,15 @@ div.bg {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: scroll;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
 
-    height: 100vh;
-    width: 100%;
-    margin: auto;
-    top: 0;
-    left: 0;
+div.bg.fixed {
+    position: fixed;
 }
 
 div.bg.hidden {

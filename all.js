@@ -22,7 +22,7 @@ if (is_touch_device()) {
     document.querySelector(".portrait").classList.add("hidden-touch")
     ;
     $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
+        var scroll = $(window).scroll();
         if (scroll >= 70) {
         $(".div.bg").addClass("fixed");
         } else {

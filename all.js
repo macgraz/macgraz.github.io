@@ -28,13 +28,14 @@ if (is_touch_device()) {
         var top_of_screen = $(window).scrollTop();
     
         if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-            $(".flex").children().addClass("active");
-            $(".flex").children().children("div.lights, div.menu").addClass("active");
+            $(this).addClass("active");
+            $(this).children("div.lights, div.menu").addClass("active");
         } else {
-
+            $(this).removeClass("active");
+            $(this).children("div.lights, div.menu").removeClass("active");
         }
     });
-
+    
 } else {
     var images = ['bg-01.jpeg', 'bg-02.jpg', 'bg-03.jpg', 'bg-04.jpg', 'bg-05.jpg', 'bg-06.jpg', 'bg-07.jpg', 'bg-08.jpg', 'bg-09.jpg', 'bg-10.jpg', 'bg-11.jpg', 'bg-12.jpg'];
     $("div.bg").css({'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'

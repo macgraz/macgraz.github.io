@@ -406,7 +406,7 @@ and (max-width: 767px) {
 
 body { 
     background-color: hsl(13, 81%, 53%); 
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin: auto;
 }
@@ -423,7 +423,7 @@ div.loader {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: hsl(13, 81%, 53%);
     z-index: 999999;
 
@@ -481,7 +481,7 @@ div.bg {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100%;
+    height: 100vh;
     margin: auto;
 
     opacity: 1;
@@ -520,7 +520,7 @@ div.main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 div.main.hidden {
@@ -858,7 +858,7 @@ p.black-only a:hover:before {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     pointer-events: none;
 
@@ -1081,7 +1081,7 @@ p.black-only a:hover:before {
     top: 0;
     left: 0;
 
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;

@@ -23,27 +23,16 @@ if (is_touch_device()) {
 
     $("#info").addClass("active");
     $("#info").children("div.lights, div.menu").addClass("active");
-    
-} else {
-    var images = ['bg-01.jpeg', 'bg-02.jpg', 'bg-03.jpg', 'bg-04.jpg', 'bg-05.jpg', 'bg-06.jpg', 'bg-07.jpg', 'bg-08.jpg', 'bg-09.jpg', 'bg-10.jpg', 'bg-11.jpg', 'bg-12.jpg'];
-    $("div.bg").css({'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
-    });
-
-    $("body").mouseover(function () {
-        $("section").addClass("visible");
-    });
-    $("body").mouseleave(function () {
-        $("section").removeClass("visible");
-    });
 
     $(window).on('scroll', function() {
         $(".flex").children().each(function() {
             if (isScrolledIntoView($(this))) {
                 $(this).addClass("active");
                 $(this).children("div.lights, div.menu").addClass("active");
-            } else
+            } else {
                 $(this).removeClass("active");
                 $(this).children("div.lights, div.menu").removeClass("active");
+            }
         });
     });
     
@@ -56,7 +45,18 @@ if (is_touch_device()) {
       
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     }
+    
+} else {
+    var images = ['bg-01.jpeg', 'bg-02.jpg', 'bg-03.jpg', 'bg-04.jpg', 'bg-05.jpg', 'bg-06.jpg', 'bg-07.jpg', 'bg-08.jpg', 'bg-09.jpg', 'bg-10.jpg', 'bg-11.jpg', 'bg-12.jpg'];
+    $("div.bg").css({'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
+    });
 
+    $("body").mouseover(function () {
+        $("section").addClass("visible");
+    });
+    $("body").mouseleave(function () {
+        $("section").removeClass("visible");
+    });
 }
 
 //LOADER

@@ -23,7 +23,7 @@ if (is_touch_device()) {
 
     $(window).scroll(function() {
         $('.flex').children().each(function() {
-            if ($(this).isInViewport({"tolerance":50,"toleranceForLast":432, "debug":true})) {
+            if ($(this).isInViewport()) {
                 $(this).addClass("active")
                 $(this).children("div.lights, div.menu").addClass("active");
             } else {

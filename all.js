@@ -21,7 +21,7 @@ function is_touch_device() {
 if (is_touch_device()) {
     document.querySelector(".portrait").classList.add("hidden-touch");
 
-    $(window).scroll(function () {
+    $(document).ready(function () {
         $('.flex').children().each(function() {
             if ($(this).isInViewport()) {
                 $(this).addClass('active');

@@ -22,8 +22,8 @@ if (is_touch_device()) {
     document.querySelector(".portrait").classList.add("hidden-touch");
 
     $(window).scroll(function() {
-        var top_of_element = $("div.flex").children().offset().top;
-        var bottom_of_element = $("div.flex").children().offset().top + $("div.flex").children().outerHeight();
+        var top_of_element = $(".flex").children().offset().top;
+        var bottom_of_element = $(".flex").children().offset().top + $(".flex").children().outerHeight();
         var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
         var top_of_screen = $(window).scrollTop();
     

@@ -24,7 +24,7 @@ if (is_touch_device()) {
     $("#info").addClass("active");
     $("#info").children("div.lights, div.menu").addClass("active");
 
-    $(window).on('scroll', function() {
+    $(window).on('touchmove', function() {
         $(".flex").children().each(function() {
             if (isScrolledIntoView($(this))) {
                 $(this).addClass("active");

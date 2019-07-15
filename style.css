@@ -423,7 +423,7 @@ div.loader {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: hsl(13, 81%, 53%);
     z-index: 999999;
 
@@ -481,7 +481,7 @@ div.bg {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: auto;
 
     opacity: 1;
@@ -520,7 +520,7 @@ div.main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 div.main.hidden {

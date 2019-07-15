@@ -21,14 +21,16 @@ function is_touch_device() {
 if (is_touch_device()) {
     document.querySelector(".portrait").classList.add("hidden-touch");
 
-    $(".flex").children().each(function() {
-        if ($(this).isInViewport()) {
-            $(this).addClass("active")
-            $(this).children("div.lights, div.menu").addClass("active")
-        } else {
-            $(this).removeClass("active")
-            $(this).children("div.lights, div.menu").removeClass("active")
-        }
+    $(window).scroll(function() {
+        $('.flex').children().each(function() {
+            if ($(this).isInViewport()) {
+                $(this).addClass("active")
+                $(this).children("div.lights, div.menu").addClass("active");
+            } else {
+                $(this).removeClass("active")
+                $(this).children("div.lights, div.menu").removeClass("active");
+            }
+        });
     });
     
 } else {

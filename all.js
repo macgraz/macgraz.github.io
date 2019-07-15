@@ -23,11 +23,11 @@ if (is_touch_device()) {
 
     $(".flex").children().each(function() {
         if ($(this).isInViewport()) {
-            $(this).addClass("active");
-            $(this).children("div.lights, div.menu").addClass("active");
+            $(this).addClass("active")
+            $(this).children("div.lights, div.menu").addClass("active")
         } else {
-            $(this).removeClass("active");
-            $(this).children("div.lights, div.menu").removeClass("active");
+            $(this).removeClass("active")
+            $(this).children("div.lights, div.menu").removeClass("active")
         }
     });
     

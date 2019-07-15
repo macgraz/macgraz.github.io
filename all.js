@@ -22,18 +22,15 @@ if (is_touch_device()) {
     document.querySelector(".portrait").classList.add("hidden-touch");
 
     $(window).scroll(function() {
-        var top_of_element = $(".flex").children().offset().top;
-        var bottom_of_element = $(".flex").children().offset().top + $(".flex").children().outerHeight();
-        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-        var top_of_screen = $(window).scrollTop();
-    
-        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-            $(this).addClass("active");
-            $(this).children("div.lights, div.menu").addClass("active");
-        } else {
-            $(this).removeClass("active");
-            $(this).children("div.lights, div.menu").removeClass("active");
-        }
+        $('.flex').children().each(function() {
+            if ($(this).isInViewport({"tolerance":50,"toleranceForLast":432, "debug":true})) {
+                $(this).addClass("active")
+                $(this).children("div.lights, div.menu").addClass("active");
+            } else {
+                $(this).removeClass("active")
+                $(this).children("div.lights, div.menu").removeClass("active");
+            }
+        });
     });
     
 } else {

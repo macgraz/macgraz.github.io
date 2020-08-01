@@ -550,7 +550,7 @@ div.flex {
 
 #costs {
     align-self: flex-end;
-    max-width: 550px;
+    max-width: 600px;
 }
 
 #contact {
@@ -766,6 +766,7 @@ p {
 }
 
 li {
+    padding: 0;
     position: relative;
 }
 

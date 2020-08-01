@@ -72,7 +72,7 @@ setTimeout(function () {
 //CARD
 
 //card move with mouse
-document.addEventListener("mousemove", function (event) {
+/*document.addEventListener("mousemove", function (event) {
     const x = event.pageX
     const y = event.pageY
 
@@ -89,7 +89,7 @@ document.addEventListener("mousemove", function (event) {
     box.style.msTransform = "rotateX(" + (midY * 0.5) + "deg) rotateY(" + (midX * 0.5) + "deg)"
     box.style.oTransform = "rotateX(" + (midY * 0.5) + "deg) rotateY(" + (midX * 0.5) + "deg)"
     box.style.transform = "rotateX(" + (midY * 0.5) + "deg) rotateY(" + (midX * 0.5) + "deg)"
-})
+})*/
 
 
 //WINDOWS

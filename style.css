@@ -759,8 +759,12 @@ h3 {
     padding: 1.7em .5em .5em .5em;
 }
 
-p, li {
+p {
     padding: .5em;
+    position: relative;
+}
+
+li {
     position: relative;
 }
 

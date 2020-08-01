@@ -350,7 +350,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    h2, h3, p, .button, table, #alert p b {
+    h2, h3, p, li, .button, table, #alert p b {
         font-size: 15px!important;  
     }
     h1 {
@@ -370,7 +370,7 @@
 
 @media only screen and (min-width: 320px) 
 and (max-width: 767px) {
-    h2, h3, p, .button, table, #alert p b {
+    h2, h3, p, li, .button, table, #alert p b {
         font-size: 13px!important;
     }
     h1 {
@@ -411,7 +411,7 @@ body {
     margin: auto;
 }
 
-html, body, h1, h2, h3, p, table {
+html, body, h1, h2, h3, p, li, table {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;

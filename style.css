@@ -550,6 +550,7 @@ div.flex {
 
 #costs {
     align-self: flex-end;
+    max-width: 550px;
 }
 
 #contact {

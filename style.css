@@ -733,7 +733,7 @@ div.lights.hover {
     background-image: url(img/lights-hover.png);
 }
 
-h1, h2, h3, p, .button, table {
+h1, h2, h3, p, li, .button, table {
     font-family: 'Work Sans', 'Arial', sans-serif;
     font-size: 16px;
     letter-spacing: .01em;
@@ -759,7 +759,7 @@ h3 {
     padding: 1.7em .5em .5em .5em;
 }
 
-p {
+p, li {
     padding: .5em;
     position: relative;
 }

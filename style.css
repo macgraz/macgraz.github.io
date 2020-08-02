@@ -839,6 +839,22 @@ p.black a:hover:before {
     transition: all 0.4s ease-in-out 100ms;
 }
 
+#info p.black a {
+    color: rgba(39, 39, 230, 1);
+}
+
+#info p.black a:before {
+    width: 100%;
+    background-color: rgba(39, 39, 230, 1);
+}
+
+#info p.black a:hover:before {
+    width: 100%;
+    left: auto;
+    right: 0;
+    background-color: rgba(39, 39, 230, 1);
+}
+
 p.black-only a {
     text-decoration: none;
     color: rgba(10, 10, 10, 1);
@@ -1034,7 +1050,7 @@ p.black-only a:hover:before {
     transition: all 400ms ease-in-out 100ms;
 }
 
-.flex a, #info p.black, .lightbox a {
+.flex a, .lightbox a {
     text-decoration: none;
     color: rgba(39, 39, 230, 1);
     position: relative;
@@ -1042,7 +1058,7 @@ p.black-only a:hover:before {
     cursor: pointer;
 }
 
-.flex a:before, #info p.black:before, .lightbox a:before {
+.flex a:before, .lightbox a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1058,7 +1074,7 @@ p.black-only a:hover:before {
     transition: all 0.4s ease-in-out 200ms;
 }
 
-.flex a:hover:before, #info p.black:hover:before, .lightbox a:hover:before {
+.flex a:hover:before, .lightbox a:hover:before {
     content: "";
     position: absolute;
     width: 0;

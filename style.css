@@ -570,7 +570,7 @@ div.flex {
     position: relative;
     border: 1px solid rgba(10,10,10,0.3);
     border-radius: 5px;
-    background-color: rgb(246, 241, 240);
+    background-color: rgb(255, 255, 255);
     margin: .8em;
 
     opacity: 0;

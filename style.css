@@ -546,20 +546,24 @@ div.flex {
 #info {
     align-self: flex-start;
     max-width: 500px;
+    padding: 2.6em 1.3em 1.3em 1.3em;
 }
 
 #costs {
     align-self: flex-end;
     max-width: 570px;
+    padding: 2.6em 1.3em 1.3em 1.3em;
 }
 
 #contact {
     align-self: auto;
+    padding: 2.6em 1.3em 1.3em 1.3em;
 }
 
 #footer {
     align-self: flex-end;
-    max-width: 320px;
+    max-width: 350px;
+    padding: 2.6em 0 0 0;
 }
 
 #info, #costs, #contact, #footer {
@@ -583,14 +587,6 @@ div.flex {
     -ms-box-shadow: 0px 13px 15px 0px rgba(10,10,10,0.1);
     -o-box-shadow: 0px 13px 15px 0px rgba(10,10,10,0.1);
     box-shadow: 0px 13px 15px 0px rgba(10,10,10,0.1);
-}
-
-#info, #costs, #contact {
-    padding: 2.6em 1.3em 1.3em 1.3em;
-}
-
-#footer {
-    padding: 2.6em 0 0 0;
 }
 
 .spacer {

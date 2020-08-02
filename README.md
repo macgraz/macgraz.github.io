@@ -17,7 +17,7 @@
 
 ## Contact
 
-If you have any problems, questions, ideas or suggestions, please contact us via:
+If you have any problems, questions, ideas or suggestions, please contact me via:
     
 [https://www.macgraz.at](https://www.macgraz.at)
 

@@ -29,12 +29,12 @@ if (is_touch_device()) {
     $("div.bg").css({'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
     });
 
-    $("body").mouseover(function () {
+    /*$("body").mouseover(function () {
         $("section").addClass("visible");
     });
     $("body").mouseleave(function () {
         $("section").removeClass("visible");
-    });
+    });*/
 }
 
 //LOADER
@@ -188,7 +188,7 @@ $("#alert .button.blue").on("click touch", function () {
         $("#alert").removeClass("visible");
     }, 100);
     $("body").on("mouseleave touchstart", function () {
-        setTimeout(function () {
+        /*setTimeout(function () {
             $("section").removeClass("visible");
         }, 1000);
         setTimeout(function () {
@@ -196,7 +196,13 @@ $("#alert .button.blue").on("click touch", function () {
         }, 1700);
         setTimeout(function () {
             location.reload();
-        }, 2400);
+        }, 2400);*/
+        setTimeout(function () {
+            $("div.bg").addClass("hidden");
+        }, 1000);
+        setTimeout(function () {
+            location.reload();
+        }, 1700);
     })
 });
 
@@ -204,7 +210,7 @@ $("#alert .button.grey").on("click touch", function () {
     setTimeout(function () {
         $("#alert").removeClass("visible");
     }, 100);
-    setTimeout(function () {
+    /*setTimeout(function () {
         $("section").removeClass("visible");
     }, 2000);
     setTimeout(function () {
@@ -212,5 +218,11 @@ $("#alert .button.grey").on("click touch", function () {
     }, 2700);
     setTimeout(function () {
         location.reload();
-    }, 3400);
+    }, 3400);*/
+    setTimeout(function () {
+        $("div.bg").addClass("hidden");
+    }, 2000);
+    setTimeout(function () {
+        location.reload();
+    }, 2700);
 });

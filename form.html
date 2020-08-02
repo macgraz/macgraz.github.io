@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<style>
+    input {
+        font-size: 20px;
+    }
+
+    #name,
+    #email,
+    #tel,
+    #strasse,
+    #plz,
+    #ort {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 1px;
+    }
+
+    #text {
+        border: solid 1px;
+        width: 400px;
+        height: 200px;
+    }
+
+</style>
+
+<body>
+    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+    <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shr8lOt9VfucQxhJ8?backgroundColor=orange" frameborder="0" onmousewheel="" width="100%" height="1072" style="background: transparent; border: none;"></iframe>
+
+    <form action="mailto:hilfe@macgraz.at" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="name@adresse.at"><br>
+
+        <label for="tel">Telefonnummer:</label>
+        <input type="tel" id="tel" pattern="\+[0-9]{3}+[0-9]{6,}" placeholder="+43 123 456789"><br>
+
+        <label for="text">Nachricht:</label><br>
+        <textarea id="text"></textarea><br>
+
+        <input type="radio" id="telberatung" name="options" onclick="showhidediv(this);">
+        <label for="telberatung">Telefonberatung</label><br>
+
+        <input type="radio" id="fernwartung" name="options" onclick="showhidediv(this);">
+        <label for="fernwartung">Fernwartung</label><br>
+
+        <input type="radio" id="vorort" name="options" onclick="showhidediv(this);">
+        <label for="vorort">Vor-Ort-Service in Graz (ab 90 Min.)</label><br>
+
+        <div id="adresse" style="display:none">
+            <label for="strasse">Straße:</label>
+            <input type="text" id="strasse"><br>
+
+            <label for="plz">PLZ:</label>
+            <input type="text" id="plz" pattern="[0-9]{4}"><br>
+
+            <label for="ort">Ort:</label>
+            <input type="text" id="ort"><br>
+        </div>
+
+        <input type="submit" value="Senden">
+    </form>
+    <script>
+        //Adresse einblenden, wenn "Vor-Ort-Service" ausgewählt
+        function showhidediv(rad) {
+            var rads = document.getElementsByName(rad.name);
+            document.getElementById('adresse').style.display = (rads[2].checked) ? 'block' : 'none';
+        }
+
+        document.getElementByClass("submitButton").value = "My value";
+    </script>
+</body>

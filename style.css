@@ -769,6 +769,10 @@ p {
     position: relative;
 }
 
+p #impressum-li {
+    padding: 1.7em .5em .5em .5em;
+}
+
 ul {
     margin: .5em 0 1.7em 0;
 }

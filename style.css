@@ -558,6 +558,7 @@ div.flex {
 }
 
 #footer {
+    background-image: url("img/card-front.png");
     align-self: flex-end;
 }
 

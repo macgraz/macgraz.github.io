@@ -390,7 +390,7 @@ and (max-width: 767px) {
     .spacer {
         height: 2em!important;
     }
-    #anfrage, #impressum, #haftungsausschluss, #datenschutz {
+    #fernwartung, #impressum, #haftungsausschluss, #datenschutz {
         padding: 2em 1em 0em 1em!important;
     }
     div.flex p, .lightbox p {
@@ -843,22 +843,6 @@ p.black a:hover:before {
     transition: all 0.4s ease-in-out 100ms;
 }
 
-#info p.black a {
-    color: rgba(39, 39, 230, 1);
-}
-
-#info p.black a:before {
-    width: 100%;
-    background-color: rgba(39, 39, 230, 1);
-}
-
-#info p.black a:hover:before {
-    width: 0;
-    left: auto;
-    right: 0;
-    background-color: rgba(39, 39, 230, 1);
-}
-
 p.black-only a {
     text-decoration: none;
     color: rgba(10, 10, 10, 1);
@@ -939,7 +923,7 @@ p.black-only a:hover:before {
     background-image: url(img/lights-lightbox-click.png);
 }
 
-#anfrage, #impressum, #haftungsausschluss, #datenschutz {
+#fernwartung, #impressum, #haftungsausschluss, #datenschutz {
     opacity: 0;
     pointer-events: none;
 
@@ -956,7 +940,7 @@ p.black-only a:hover:before {
     overflow: auto;
 }
 
-.lightbox.window.visible, .lights-light.visible, #anfrage.visible, #impressum.visible, #haftungsausschluss.visible, #datenschutz.visible {
+.lightbox.window.visible, .lights-light.visible, #fernwartung.visible, #impressum.visible, #haftungsausschluss.visible, #datenschutz.visible {
     opacity: 1;
     pointer-events: auto;
     -webkit-transition: opacity 300ms ease-in-out 100ms;

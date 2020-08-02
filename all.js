@@ -138,24 +138,24 @@ $("p.black a").on("click touch", function () {
     $(".lightbox.window, .lights-light").addClass("visible");
 });
 
-$("#anfrage-li").on("click touch", function () {
-    $("#anfrage").addClass("visible");
+$("#fernwartung-li").on("click touch", function () {
+    $("#fernwartung").addClass("visible");
     $("#impressum, #haftungsausschluss, #datenschutz").removeClass("visible");
 });
 
 $("#impressum-li").on("click touch", function () {
     $("#impressum").addClass("visible");
-    $("#anfrage, #haftungsausschluss, #datenschutz").removeClass("visible");
+    $("#fernwartung, #haftungsausschluss, #datenschutz").removeClass("visible");
 });
 
 $("#haftungsausschluss-li").on("click touch", function () {
     $("#haftungsausschluss").addClass("visible");
-    $("#anfrage, #impressum, #datenschutz").removeClass("visible");
+    $("#fernwartung, #impressum, #datenschutz").removeClass("visible");
 });
 
 $("#datenschutz-li").on("click touch", function () {
     $("#datenschutz").addClass("visible");
-    $("#anfrage, #haftungsausschluss, #impressum").removeClass("visible");
+    $("#fernwartung, #haftungsausschluss, #impressum").removeClass("visible");
 });
 
 $(".lights-light, #contact div.lights, #info, #costs, #footer").on("click touch", function () {

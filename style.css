@@ -1034,7 +1034,7 @@ p.black-only a:hover:before {
     transition: all 400ms ease-in-out 100ms;
 }
 
-.flex a, .lightbox a {
+.flex a, #info p.black, .lightbox a {
     text-decoration: none;
     color: rgba(39, 39, 230, 1);
     position: relative;
@@ -1042,7 +1042,7 @@ p.black-only a:hover:before {
     cursor: pointer;
 }
 
-.flex a:before, .lightbox a:before {
+.flex a:before, #info p.black:before, .lightbox a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1058,7 +1058,7 @@ p.black-only a:hover:before {
     transition: all 0.4s ease-in-out 200ms;
 }
 
-.flex a:hover:before, .lightbox a:hover:before {
+.flex a:hover:before, #info p.black:hover:before, .lightbox a:hover:before {
     content: "";
     position: absolute;
     width: 0;

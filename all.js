@@ -199,7 +199,7 @@ $("#alert .button.blue").on("click touch", function () {
         }, 2400);*/
         setTimeout(function () {
             $("body").css("cursor", "none");
-        }, 700);
+        }, 500);
         setTimeout(function () {
             $("div.bg").addClass("hidden");
         }, 1000);
@@ -212,7 +212,7 @@ $("#alert .button.blue").on("click touch", function () {
 $("#alert .button.grey").on("click touch", function () {
     setTimeout(function () {
         $("#alert").removeClass("visible");
-    }, 300);
+    }, 100);
     /*setTimeout(function () {
         $("section").removeClass("visible");
     }, 2000);
@@ -224,7 +224,7 @@ $("#alert .button.grey").on("click touch", function () {
     }, 3400);*/
     setTimeout(function () {
         $("body").css("cursor", "none");
-    }, 1700);
+    }, 1500);
     setTimeout(function () {
         $("div.bg").addClass("hidden");
     }, 2000);

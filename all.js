@@ -198,6 +198,9 @@ $("#alert .button.blue").on("click touch", function () {
             location.reload();
         }, 2400);*/
         setTimeout(function () {
+            $("body").CSS("cursor", "none");
+        }, 700);
+        setTimeout(function () {
             $("div.bg").addClass("hidden");
         }, 1000);
         setTimeout(function () {
@@ -219,6 +222,9 @@ $("#alert .button.grey").on("click touch", function () {
     setTimeout(function () {
         location.reload();
     }, 3400);*/
+    setTimeout(function () {
+        $("body").CSS("cursor", "none");
+    }, 1700);
     setTimeout(function () {
         $("div.bg").addClass("hidden");
     }, 2000);

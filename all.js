@@ -97,7 +97,9 @@ setTimeout(function () {
 //windows activity
 $(".flex").children().on("click touch", function () {
     $(".flex").children().removeClass("active");
+    $(".flex").children().css("cursor", "default");
     $(this).addClass("active");
+    $(this).css("cursor", "auto");
 }).children(".black").on("click touch", function (e) {
     e.stopPropagation();
 });
@@ -110,6 +112,7 @@ $(".lightbox").on("click touch", function () {
 $(".main").on("click touch", function () {
     $(".flex").children().removeClass("active");
     $(".flex").children().children("div.lights, div.menu").removeClass("active");
+    $(".flex").children().css("cursor", "default");
     $(".lightbox").removeClass("visible");
     $(".lightbox").children().removeClass("visible");
     $(".portrait").removeClass("hidden");

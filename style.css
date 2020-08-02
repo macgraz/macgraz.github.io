@@ -788,10 +788,6 @@ td {
     vertical-align: top;
 }
 
-.lightbox {
-    cursor: auto;
-}
-
 .lightbox p {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;

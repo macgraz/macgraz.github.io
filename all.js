@@ -199,20 +199,20 @@ $("#alert .button.blue").on("click touch", function () {
         }, 2400);*/
         setTimeout(function () {
             $("body").css("cursor", "none");
-        }, 1000);
+        }, 700);
         setTimeout(function () {
             $("div.bg").addClass("hidden");
-        }, 1700);
+        }, 1000);
         setTimeout(function () {
             location.reload();
-        }, 2400);
+        }, 1700);
     })
 });
 
 $("#alert .button.grey").on("click touch", function () {
     setTimeout(function () {
         $("#alert").removeClass("visible");
-    }, 100);
+    }, 300);
     /*setTimeout(function () {
         $("section").removeClass("visible");
     }, 2000);
@@ -224,7 +224,7 @@ $("#alert .button.grey").on("click touch", function () {
     }, 3400);*/
     setTimeout(function () {
         $("body").css("cursor", "none");
-    }, 1300);
+    }, 1700);
     setTimeout(function () {
         $("div.bg").addClass("hidden");
     }, 2000);

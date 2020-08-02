@@ -536,6 +536,7 @@ div.flex {
     padding-top: 4em;
     align-items: center;
     justify-content: space-evenly;
+    cursor: default;
 }
 
 #info.visible, #costs.visible, #contact.visible, #footer.visible {

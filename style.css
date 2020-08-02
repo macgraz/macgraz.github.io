@@ -849,7 +849,7 @@ p.black a:hover:before {
 }
 
 #info p.black a:hover:before {
-    width: 100%;
+    width: 0;
     left: auto;
     right: 0;
     background-color: rgba(39, 39, 230, 1);

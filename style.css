@@ -558,12 +558,7 @@ div.flex {
 }
 
 #footer {
-    background-image: url("img/card-front.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     align-self: flex-end;
-    max-width: 350px;
-    height: auto;
 }
 
 #info, #costs, #contact, #footer {

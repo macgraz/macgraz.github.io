@@ -136,6 +136,7 @@ $(".flex").children().on("click touch", function () {
 $("p.black a").on("click touch", function () {
     $(".lightbox").addClass("visible");
     $(".flex").children().removeClass("active");
+    $(".flex").children().css("cursor", "default");
     $(".flex").children().children("div.lights, div.menu").removeClass("active")
     $(".portrait").addClass("hidden");
     $(".lightbox.window, .lights-light").addClass("visible");

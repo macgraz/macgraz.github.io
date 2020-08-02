@@ -199,13 +199,13 @@ $("#alert .button.blue").on("click touch", function () {
         }, 2400);*/
         setTimeout(function () {
             $("body").css("cursor", "none");
-        }, 700);
-        setTimeout(function () {
-            $("div.bg").addClass("hidden");
         }, 1000);
         setTimeout(function () {
-            location.reload();
+            $("div.bg").addClass("hidden");
         }, 1700);
+        setTimeout(function () {
+            location.reload();
+        }, 2400);
     })
 });
 
@@ -224,7 +224,7 @@ $("#alert .button.grey").on("click touch", function () {
     }, 3400);*/
     setTimeout(function () {
         $("body").css("cursor", "none");
-    }, 1700);
+    }, 1300);
     setTimeout(function () {
         $("div.bg").addClass("hidden");
     }, 2000);

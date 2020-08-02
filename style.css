@@ -779,6 +779,11 @@ td {
     vertical-align: top;
 }
 
+#costs td {
+    padding: 0;
+    vertical-align: top;
+}
+
 .lightbox p {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;

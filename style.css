@@ -559,6 +559,7 @@ div.flex {
 
 #footer {
     align-self: flex-end;
+    max-width: 280px;
 }
 
 #info, #costs, #contact, #footer {

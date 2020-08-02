@@ -769,7 +769,7 @@ p {
     position: relative;
 }
 
-p #impressum-li {
+p.black {
     padding: 1.7em .5em .5em .5em;
 }
 

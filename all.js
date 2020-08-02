@@ -138,19 +138,24 @@ $("p.black a").on("click touch", function () {
     $(".lightbox.window, .lights-light").addClass("visible");
 });
 
+$("#anfrage-li").on("click touch", function () {
+    $("#anfrage").addClass("visible");
+    $("#impressum, #haftungsausschluss, #datenschutz").removeClass("visible");
+});
+
 $("#impressum-li").on("click touch", function () {
     $("#impressum").addClass("visible");
-    $("#haftungsausschluss, #datenschutz").removeClass("visible");
+    $("#anfrage, #haftungsausschluss, #datenschutz").removeClass("visible");
 });
 
 $("#haftungsausschluss-li").on("click touch", function () {
     $("#haftungsausschluss").addClass("visible");
-    $("#impressum, #datenschutz").removeClass("visible");
+    $("#anfrage, #impressum, #datenschutz").removeClass("visible");
 });
 
 $("#datenschutz-li").on("click touch", function () {
     $("#datenschutz").addClass("visible");
-    $("#haftungsausschluss, #impressum").removeClass("visible");
+    $("#anfrage, #haftungsausschluss, #impressum").removeClass("visible");
 });
 
 $(".lights-light, #contact div.lights, #info, #costs, #footer").on("click touch", function () {

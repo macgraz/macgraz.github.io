@@ -224,11 +224,11 @@ $("#alert .button.grey").on("click touch", function () {
     }, 3400);*/
     setTimeout(function () {
         $("body").css("cursor", "none");
-    }, 1500);
-    setTimeout(function () {
-        $("div.bg").addClass("hidden");
     }, 2000);
     setTimeout(function () {
+        $("div.bg").addClass("hidden");
+    }, 2500);
+    setTimeout(function () {
         location.reload();
-    }, 2700);
+    }, 3200);
 });

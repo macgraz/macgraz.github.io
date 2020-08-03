@@ -366,6 +366,9 @@
     div.flex p, .lightbox p {
         font-size: 15px!important;
     }
+    #costs td {
+        white-space: normal!important;
+    }
 }
 
 @media only screen and (min-width: 320px) 
@@ -400,7 +403,10 @@ and (max-width: 767px) {
         padding: 0!important;
     }
     #alert img {
-        padding-right: 8px;
+        padding-right: 8px!important;
+    }
+    #costs td {
+        white-space: normal!important;
     }
 }
 
@@ -798,6 +804,7 @@ td {
 #costs td {
     padding: 0 10px 0 .5em;
     vertical-align: top;
+    white-space: nowrap;
 }
 
 .lightbox p {
@@ -1122,7 +1129,7 @@ p.black-only a:hover:before {
     z-index: 99999;
 }
 
-section {
+/*section {
     position: absolute;
     top: -50%;
     left: -50%;
@@ -1139,10 +1146,10 @@ section {
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
 
-    visibility: hidden;
+    visibility: hidden;*/
 
     /*transform: rotateX(40deg) rotateY(0deg) rotateZ(30deg);*/
-}
+/*}
 
 section.visible {
     visibility: visible;
@@ -1219,7 +1226,7 @@ div.card-back {
     -ms-transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(2px);
     -o-transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(2px);
     transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(2px);
-}
+}*/
 
 /*@font-face {
     font-family: acier-bat-noir;

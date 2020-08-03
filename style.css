@@ -366,10 +366,6 @@
     div.flex p, .lightbox p {
         font-size: 15px!important;
     }
-    #costs td, #fernwartung td, #impressum td {
-        white-space: normal!important;
-        display: table-row;
-    }
 }
 
 @media only screen and (min-width: 320px) 

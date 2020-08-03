@@ -599,7 +599,7 @@ div.flex {
 .spacer {
     position: relative;
     height: 4em;
-    width: 50px;
+    width: 100%;
     opacity: 0;
     align-self: flex-end;
 }

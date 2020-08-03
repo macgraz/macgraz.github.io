@@ -778,7 +778,11 @@ ul {
 }
 
 #costs ul {
-    margin: .5em 0 1.7em 0;
+    margin-bottom: 1.7em;
+}
+
+#info a {
+    margin-top: 1.7em;
 }
 
 li {

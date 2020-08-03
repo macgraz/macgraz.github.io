@@ -366,7 +366,7 @@
     div.flex p, .lightbox p {
         font-size: 15px!important;
     }
-    #costs td, #fernwartung td {
+    #costs td, #fernwartung td, #impressum td {
         white-space: normal!important;
         display: table-row;
     }
@@ -406,7 +406,7 @@ and (max-width: 767px) {
     #alert img {
         padding-right: 8px!important;
     }
-    #costs td, #fernwartung td {
+    #costs td, #fernwartung td, #impressum td {
         white-space: normal!important;
         display: table-row;
     }

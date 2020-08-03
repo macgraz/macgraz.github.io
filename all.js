@@ -138,24 +138,29 @@ $("p.black a").on("click touch", function () {
     $(".lightbox.window, .lights-light").addClass("visible");
 });
 
+$("#tipps-li").on("click touch", function () {
+    $("#tipps").addClass("visible");
+    $("#fernwartung, #impressum, #haftungsausschluss, #datenschutz").removeClass("visible");
+});
+
 $("#fernwartung-li").on("click touch", function () {
     $("#fernwartung").addClass("visible");
-    $("#impressum, #haftungsausschluss, #datenschutz").removeClass("visible");
+    $("#tipps, #impressum, #haftungsausschluss, #datenschutz").removeClass("visible");
 });
 
 $("#impressum-li").on("click touch", function () {
     $("#impressum").addClass("visible");
-    $("#fernwartung, #haftungsausschluss, #datenschutz").removeClass("visible");
+    $("#tipps, #fernwartung, #haftungsausschluss, #datenschutz").removeClass("visible");
 });
 
 $("#haftungsausschluss-li").on("click touch", function () {
     $("#haftungsausschluss").addClass("visible");
-    $("#fernwartung, #impressum, #datenschutz").removeClass("visible");
+    $("#tipps, #fernwartung, #impressum, #datenschutz").removeClass("visible");
 });
 
 $("#datenschutz-li").on("click touch", function () {
     $("#datenschutz").addClass("visible");
-    $("#fernwartung, #haftungsausschluss, #impressum").removeClass("visible");
+    $("#tipps, #fernwartung, #haftungsausschluss, #impressum").removeClass("visible");
 });
 
 $(".lights-light, #contact div.lights, #info, #costs, #footer").on("click touch", function () {

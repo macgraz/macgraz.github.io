@@ -777,6 +777,10 @@ ul {
     margin: .5em 0 .5em 0;
 }
 
+#costs ul {
+    margin: .5em 0 1.7em 0;
+}
+
 li {
     padding: 0;
     position: relative;
